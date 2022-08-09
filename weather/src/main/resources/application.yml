@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: weather-service
+
+eureka:
+  instance:
+    hostname: localhost
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics
+
+info:
+  author: João Vitor D. P. Gois
+  mail: jo.vitor.d@gmail.com
